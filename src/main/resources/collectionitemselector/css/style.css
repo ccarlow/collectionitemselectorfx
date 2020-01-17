@@ -1,0 +1,24 @@
+.collection-item-selector > .left-arrow-button {
+}
+
+.collection-item-selector > .right-arrow-button {
+
+}
+
+.collection-item-selector .left-arrow {
+	-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+	-fx-shape: "M 0 0 L -13 7 L 0 13 z";
+	-fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.375em 0.291em 0.375em 0.291em;
+}
+
+.collection-item-selector .right-arrow {
+	-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+	-fx-shape: "M 0 0 L 13 7 L 0 13 z";
+	-fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.375em 0.291em 0.375em 0.291em;
+}
+
+.collection-item-selector .text-field {
+	-fx-pref-width: 70;
+}

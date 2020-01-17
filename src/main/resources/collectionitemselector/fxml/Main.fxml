@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import dock.*?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" stylesheets="/collectionitemselector/css/style.css" fx:controller="collectionitemselector.ui.controller.MainController">
+	<HBox styleClass="collection-item-selector">
+		<Button styleClass="left-arrow-button" onAction="#selectPrevious">
+			<graphic>
+				<Region styleClass="left-arrow"/>
+			</graphic>
+		</Button>
+		<VBox alignment="CENTER">
+			<TextField fx:id="itemIndexTextField" onAction="#selectIndex"/>
+			<Label fx:id="listSummaryLabel"/>
+		</VBox>
+		<Button styleClass="right-arrow-button" onAction="#selectNext">
+			<graphic>
+				<Region styleClass="right-arrow"/>
+			</graphic>
+		</Button>
+	</HBox>	
+</VBox>

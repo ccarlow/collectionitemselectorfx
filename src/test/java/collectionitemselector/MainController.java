@@ -26,6 +26,8 @@ public class MainController implements Initializable, CollectionItemSelectorList
     
     listItemSelector.addCollectionItemSelectorListener(this);
     explosivesItemSelectorController.setCollectionItemSelector(listItemSelector);
+    
+    listItemSelector.setCurrentIndex(1);
   }
 
   @Override

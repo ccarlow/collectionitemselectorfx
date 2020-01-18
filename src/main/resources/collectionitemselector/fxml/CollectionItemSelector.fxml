@@ -2,7 +2,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 <?import dock.*?>
-<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" stylesheets="/collectionitemselector/css/style.css" fx:controller="collectionitemselector.ui.controller.MainController">
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" stylesheets="/collectionitemselector/css/style.css" fx:controller="collectionitemselector.CollectionItemSelectorController">
 	<HBox styleClass="collection-item-selector">
 		<Button styleClass="left-arrow-button" onAction="#selectPrevious">
 			<graphic>

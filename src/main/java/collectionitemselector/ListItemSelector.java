@@ -6,9 +6,14 @@ public class ListItemSelector extends AbstractCollectionItemSelector {
 
   private List list;
   private int currentIndex = 0;
+  private List<Integer> indices;
 
   public ListItemSelector(List list) {
     this.list = list;
+  }
+  
+  public void setIndices(List<Integer> indices) {
+	  this.indices = indices;
   }
 
   @Override
@@ -22,7 +27,16 @@ public class ListItemSelector extends AbstractCollectionItemSelector {
   @Override
   public void setNextIndex() {
     if (currentIndex + 1 <= list.size()) {
-      currentIndex++;
+    	if (indices != null) {
+    		for (Integer index : indices) {
+    			if (currentIndex > index) {
+    				currentIndex = index;
+    				break;
+    			}
+    		}
+    	} else {
+    		currentIndex++;	
+    	}
       notifyIndexChanged();
     }
   }
